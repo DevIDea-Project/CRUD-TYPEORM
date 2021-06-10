@@ -37,4 +37,3 @@ export class App {
     this.express.use('/api', routes)
   }
 }
-
