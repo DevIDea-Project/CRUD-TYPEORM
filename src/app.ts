@@ -1,5 +1,6 @@
 import * as express from 'express';
 import routes from './routes/New.routes'
+import product from './routes/Product.routes';
 import { createConnection } from 'typeorm';
 
 export class App {
@@ -35,5 +36,6 @@ export class App {
 
   private routes(): void {
     this.express.use('/api', routes)
+    this.express.use('/api', product)
   }
 }
